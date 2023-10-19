@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary: black;
+    --secondary:red;
+    --awesome: hsl(135, 53%, 37%, .7);
+}
+.container {
+    margin-block: 10px;
+    background-color: blueviolet;
+}  
+.container :is(#paranormal,#IT),
+.button-wrapper {
+    display: flex;
+    gap: .5rem;
+}
+.container :is(#It) {
+    flex-flow: row wrap;
+}
+.item {
+    display: grid;
+    grid-template-rows: 5rem 1fr auto;
+}
+.item>img{
+    width: 10rem;
+    aspect-ratio: 1/1;
+}
+.button-wrapper {
+    justify-content: space-between;
+}
+.button-wrapper {
+    border: 3px solid;
+    border-image:1px;
+} 
