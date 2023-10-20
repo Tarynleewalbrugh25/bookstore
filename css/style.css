@@ -7,33 +7,73 @@
 }
 :root {
     --primary: black;
-    --secondary:red;
+    --secondary: rgb(255, 255, 255);
     --awesome: hsl(135, 53%, 37%, .7);
 }
 .container {
-    margin-block: 10px;
-    background-color: blueviolet;
-}  
-.container :is(#paranormal,#IT),
+    margin-block: 20px;
+    --numbOfRed: 123;
+    --numbOfOrange: 100;
+    --numbOfYellow: 18;
+    border-width: 8px 8px;
+    border-image: radial-gradient(120deg, var(--numbOfRed), var(--numbOfOrange), var(--numbOfYellow));
+}
+.container :is(#Paranormal, #Technology,#Cooking,#Romance), 
 .button-wrapper {
     display: flex;
-    gap: .5rem;
+    gap: .10rem;
 }
-.container :is(#It) {
+.container :is(#example2) {
     flex-flow: row wrap;
 }
 .item {
     display: grid;
-    grid-template-rows: 5rem 1fr auto;
+    grid-template-rows: 20rem 1fr auto;
 }
 .item>img{
-    width: 10rem;
+    width: 20rem;
     aspect-ratio: 1/1;
 }
 .button-wrapper {
     justify-content: space-between;
 }
-.button-wrapper {
+.button-wrapper button {
     border: 3px solid;
-    border-image:1px;
-} 
+    border-image: linear-gradient( red, var(--awesome)) 11 fill;
+}
+.image-animation {
+    background: linear-gradient(to right, green, yellow);
+    height: 300px;
+}
+img[alt="Image"]{
+    width: 5rem;
+    aspect-ratio: 1/1;
+    animation: animateLaptop 5s infinite;
+    transition: all .5s;
+}
+body {
+    text-align: center;
+}
+.header {
+    padding:10 ;
+    text-align:center ;;
+    color:black ;
+    font-size:25px ;
+}
+  .topnav {
+    overflow: hidden;
+    background-color:rgb(197, 187, 187);
+  }
+  .topnav a {
+    float: left;
+    text-align: center;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 45px;
+  }
+  .navbar {
+  display: block;
+  }
+  .topnav a:hover {
+    color: black;
+  }
