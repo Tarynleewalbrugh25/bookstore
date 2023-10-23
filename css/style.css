@@ -1,7 +1,7 @@
 *,
 *::after,
 *::before {
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -41,39 +41,15 @@
     border: 3px solid;
     border-image: linear-gradient( red, var(--awesome)) 11 fill;
 }
-.image-animation {
-    background: linear-gradient(to right, green, yellow);
-    height: 300px;
-}
-img[alt="Image"]{
-    width: 5rem;
-    aspect-ratio: 1/1;
-    animation: animateLaptop 5s infinite;
-    transition: all .5s;
-}
 body {
     text-align: center;
 }
-.header {
-    padding:10 ;
-    text-align:center ;;
-    color:black ;
-    font-size:25px ;
+.button login {
+    margin: 2px;
+    padding: 4px;
+    box-sizing: border-box;
+    background: fixed;
 }
-  .topnav {
-    overflow: hidden;
-    background-color:rgb(197, 187, 187);
-  }
-  .topnav a {
-    float: left;
-    text-align: center;
-    padding: 10px 25px;
-    text-decoration: none;
-    font-size: 45px;
-  }
-  .navbar {
-  display: block;
-  }
-  .topnav a:hover {
-    color: black;
-  }
+.background {
+    color:bisque
+}
